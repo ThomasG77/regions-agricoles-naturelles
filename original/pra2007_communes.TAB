@@ -1,0 +1,42 @@
+!table
+!version 450
+!charset WindowsLatin1
+
+Definition Table
+  Type NATIVE Charset "WindowsLatin1"
+  Fields 30
+    Id_GéoFLA Integer ;
+    Code_Commune Char (3) ;
+    INSEE_Commune Char (5) ;
+    Nom_Commune Char (50) ;
+    Statut Char (20) ;
+    Population Decimal (6, 1) ;
+    Superficie Integer ;
+    Abscisse_Chef_Lieu Integer ;
+    Ordonnée_Chef_Lieu Integer ;
+    Abscisse_Centroïde Integer ;
+    Ordonnée_Centroïde Integer ;
+    Altitude_Moyenne Integer ;
+    Code_Canton Char (2) ;
+    Code_Arrondissement Char (1) ;
+    Code_Département Char (2) ;
+    Nom_Département Char (30) ;
+    Code_Région Char (2) ;
+    Nom_Région Char (30) ;
+    EXTRACTION_IGN Char (16) ;
+    RECETTE Date ;
+    Région Float ;
+    Département Char (10) ;
+    Arrondissement Float ;
+    Pseudo_canton Float ;
+    Codecommune Char (5) Index 1 ;
+    Régionagricole Float Index 2 ;
+    Petiterégionagricole Char (10) ;
+    Nomdelapetiterégionagricole Char (48) Index 3 ;
+    Préfixecommune Char (5) ;
+    Nomdelacommune Char (45) ;
+begin_metadata
+"\IsReadOnly" = "FALSE"
+"\MapInfo" = ""
+"\MapInfo\TableID" = "16dbd964-744d-4a4f-93a5-9b019d62f2e4"
+end_metadata
